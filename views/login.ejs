@@ -1,0 +1,35 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/guest-nav.ejs') %>
+
+<!-- Form -->
+<h3 class="login">Log In</h3>
+<section class="emailNotFound">
+<% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
+    <div class="alert alert-danger"><%= el.msg %></div>
+    <% }) %> <% } %> <% if (locals.messages.info) { %> <%
+    messages.info.forEach( el => { %>
+    <div class="alert alert-info"><%= el.msg %></div>
+    <% }) %> <% } %>
+</section>
+<form class="login" method="post" action="/login">
+    <div class="row gtr-uniform">
+
+        <div class="col-12 col-12-xsmall">
+            <input type="email" name="email" id="email" value="" placeholder="Email" required/>
+        </div>
+        <div class="col-12 col-12-xsmall">
+            <input type="password" name="password" id="password" value="" placeholder="Password" required/>
+        </div>
+
+        <div class="col-12">
+            <ul class="actions">
+                <li><input type="submit" value="Log In" class="primary" /></li>
+                <li><span><a href="#">Forgot email or password?</a></span></li>
+            </ul>
+        </div>
+    </div>
+</form>
+
+
+
+<%- include('partials/footer.ejs') %>

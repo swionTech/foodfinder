@@ -1,0 +1,71 @@
+<%- include('vendor-nav.ejs') %>
+
+<%- include('vendor-side-nav.ejs') %>
+
+<article id="main">
+    
+    <section class="profileBody">
+        <section class="content-container vendor-container">
+
+            <!-- <section class="dashboard">
+                <h3>Profile Dashboard</h3>
+                    <ul>
+                        <li><a href="#" class="button default small fit">View Profile</a></li>
+                        <li><a href="#" class="button primary small fit">Description</a></li>
+                        <li><a href="#" class="button primary small fit">Menu</a></li>
+                        <li><a href="#" class="button primary small fit">Photos</a></li>
+                        <li><a href="#" class="button primary small fit">Links</a></li>
+                    </ul>
+            </section> -->
+
+            <section class="vendor-map">
+                <h3>Set Your Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14209.001167891529!2d-82.18223905!3d27.0854029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1663347624484!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <ul class="gpsControl">
+                    <li>Ready to open?</li>
+                    <li><a href="#" class="button primary">Turn on Location</a></li>
+                    <li>Ready to close?</li>
+                    <li><a href="#" class="button primary">Turn off Location</a></li>
+                </ul>
+
+            </section>
+
+            <!-- Form -->
+
+            <section class="vendor-form">
+                <h3>Send a message to your followers</h3>
+
+                <form class="vendorMessage" method="post" action="#">
+                    <div class="row gtr-uniform">
+                        <!-- Break -->
+                        <div class="col-12">
+                            <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+                        </div>
+                        <!-- Break -->
+                        <div class="col-6 col-12-small">
+                            <input type="checkbox" id="facebook" name="facebook">
+                            <label for="facebook">Share to Facebook</label>
+                        </div>
+                        <div class="col-6 col-12-small">
+                            <input type="checkbox" id="twitter" name="twitter">
+                            <label for="twitter">Share to Twitter</label>
+                        </div>
+                        <!-- Break -->
+                        <div class="col-12">
+                            <ul class="actions">
+                                <li><input type="submit" value="Send Message" class="primary" /></li>
+                                <li><input type="reset" value="Reset" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+        
+           
+    
+        </section>
+        
+    </section>
+
+

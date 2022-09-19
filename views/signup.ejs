@@ -1,0 +1,61 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/guest-nav.ejs') %>
+
+<!-- Form -->
+<h3 class="signup">Sign Up</h3>
+<section class="pwdError">
+    <% if (locals.messages.errors) { %>
+        <% messages.errors.forEach( el => { %>
+            <div class="alert alert-danger"><%= el.msg %></div>
+        <% }) %>    
+    <% } %>
+    <% if (locals.messages.info) { %>
+        <% messages.info.forEach( el => { %>
+            <div class="alert alert-info"><%= el.msg %></div>
+        <% }) %>    
+    <% } %>
+</section>
+<form class="signup" method="post" action="/signup">
+    <div class="row gtr-uniform">
+        <div class="col-6 col-12-xsmall">
+            <input type="email" name="email" id="email" value="" placeholder="Email" required/>
+        </div>
+        <div class="col-6 col-12-xsmall">
+            <input type="text" name="name" id="name" value="" placeholder="Display Name" required/>
+        </div>
+
+        <div class="col-6 col-12-xsmall">
+            <input type="password" name="password" id="password" value="" placeholder="Password" required/>
+        </div>
+        <div class="col-6 col-12-xsmall">
+            <input type="password" name="confirmPassword" id="confirmPassword" value="" placeholder="Confirm Password" required/>
+        </div>
+        
+        <!-- Break -->
+        <div class="col-12">
+            <select name="isVendor" id="vendor" required>
+                <option value="">- Account Type -</option>
+                <option value="0">Consumer (I want to find food!)</option>
+                <option value="1">Vendor (I want to sell food!)</option>
+            </select>
+        </div>
+       
+        <!-- Break -->
+        <div class="col-12 col-12-small">
+            <input type="checkbox" id="human" name="human" required>
+            <label for="human">I am a human and not a robot</label>
+        </div>
+
+        <!-- Break -->
+        <div class="col-12">
+            <ul class="actions">
+                <li><input type="submit" value="Create Account" class="primary" /></li>
+                <li><input type="reset" value="Reset" /></li>
+            </ul>
+        </div>
+    </div>
+</form>
+
+
+
+<%- include('partials/footer.ejs') %>

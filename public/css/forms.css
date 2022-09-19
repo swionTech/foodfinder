@@ -1,0 +1,26 @@
+.login,
+.signup {
+    margin: 15px;
+    padding: 0 350px 200px 350px;
+}
+
+h3.login,
+h3.signup {
+    padding: 50px 0 15px 350px;
+}
+
+.emailNotFound,
+.pwdError {
+    color: red;
+    text-align: center;
+}
+
+
+.vendor-form {
+    color: white;
+    flex: 1.25;
+    padding-left: 6em;
+	padding-right: 2em;
+}
+
+

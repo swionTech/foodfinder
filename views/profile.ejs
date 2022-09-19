@@ -1,0 +1,13 @@
+<%- include('partials/header.ejs') %>
+
+
+<!-- profile body -->
+<% if (user.isVendor == true) { %>
+    <%- include('partials/vendor-profile.ejs') %>
+<% } else if (user.isVendor == false) { %>
+    <%- include('partials/consumer-profile.ejs')%>
+<% } %>
+
+<section class="profileFooter">
+<%- include('partials/profile-footer.ejs') %>
+</section>
