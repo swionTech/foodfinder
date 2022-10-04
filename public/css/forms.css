@@ -1,18 +1,24 @@
-.login,
+.login {
+    margin: 0;
+    padding: 15px 380px 215px 350px;
+}
+
 .signup {
-    margin: 15px;
-    padding: 0 350px 200px 350px;
+    margin: 0;
+    padding: 15px 380px 0 350px;
 }
 
 h3.login,
 h3.signup {
-    padding: 50px 0 15px 350px;
+    margin: 0;
+    padding: 80px 0 45px 350px;
 }
 
 .emailNotFound,
 .pwdError {
     color: red;
     text-align: center;
+    text-shadow: 1px 0px 4px #000;
 }
 
 
@@ -20,7 +26,7 @@ h3.signup {
     color: white;
     flex: 1.25;
     padding-left: 6em;
-	padding-right: 2em;
+	padding-right: 4em;
 }
 
 

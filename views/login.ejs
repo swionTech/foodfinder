@@ -2,6 +2,8 @@
 <%- include('partials/guest-nav.ejs') %>
 
 <!-- Form -->
+<section class="backBackground">
+<section class="login-signup">
 <h3 class="login">Log In</h3>
 <section class="emailNotFound">
 <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
@@ -29,7 +31,7 @@
         </div>
     </div>
 </form>
+</section>
+</section>
 
-
-
-<%- include('partials/footer.ejs') %>
+<%- include('partials/profile-footer.ejs') %>

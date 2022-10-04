@@ -2,6 +2,8 @@
 <%- include('partials/guest-nav.ejs') %>
 
 <!-- Form -->
+<section class="backBackground">
+<section class="login-signup">
 <h3 class="signup">Sign Up</h3>
 <section class="pwdError">
     <% if (locals.messages.errors) { %>
@@ -21,7 +23,7 @@
             <input type="email" name="email" id="email" value="" placeholder="Email" required/>
         </div>
         <div class="col-6 col-12-xsmall">
-            <input type="text" name="name" id="name" value="" placeholder="Display Name" required/>
+            <input type="text" name="userName" id="userName" value="" placeholder="Display Name" required/>
         </div>
 
         <div class="col-6 col-12-xsmall">
@@ -55,7 +57,9 @@
         </div>
     </div>
 </form>
+</section>
+</section>
 
 
 
-<%- include('partials/footer.ejs') %>
+<%- include('partials/profile-footer.ejs') %>
