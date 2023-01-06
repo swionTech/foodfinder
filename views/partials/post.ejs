@@ -1,0 +1,16 @@
+
+        <!--TWEAK THIS-->
+    
+            <ul>
+                <!-- loop through the quotes -->
+                <% for(let i = 0; i < posts.length; i++) {%>
+                    <li>
+                        <span><%= posts[i].name %></span>:
+                        <span><%= posts[i].caption %></span>
+                    </li>
+                <% } %>
+            </ul>
+    
+        </section>
+        <!-- ************* -->
+
